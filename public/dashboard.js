@@ -12,7 +12,7 @@ let allData = [];
 let currentFilter = "all";
 
 
-const API_URL = "http://localhost:4000/dashboard";
+const API_URL = "http://3.110.115.77:4000/dashboard";
 
 const user = JSON.parse(localStorage.getItem("user"));
 document.querySelector('#welcome-name').textContent = `Welcome, ${user.name}`;
@@ -192,7 +192,7 @@ const incomeForm = document.querySelector('#income');
 const incomeInput = document.querySelector('#income-amount');
 const incomeDes = document.querySelector('#inc-des');
 
-const API_URL_INCOME = "http://localhost:4000/dashboard/income";
+const API_URL_INCOME = "http://3.110.115.77:4000/dashboard/income";
 
 function handleFormSubmitForIncome(event) {
     event.preventDefault();
